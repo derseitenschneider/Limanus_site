@@ -4,7 +4,7 @@
   <li class="navigation__element"><a href="about.php" class="navigation__link">Über mich</a></li>
   <li class="navigation__element"><a href="" class="navigation__link">Angebot & Preise</a></li>
 </ul>
-<a href="" class="navigation__logo-link">
+<a href="index.php" class="navigation__logo-link">
 <svg width="201" height="200" viewBox="0 0 201 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="navigation__logo">
 <circle cx="100.25" cy="100" r="100" fill="#384F52"/>
 <path d="M130.828 41.6361C125.055 49.1961 114.202 65.9013 116.978 72.2426" stroke="#D5C190" stroke-width="2.82087"/>
