@@ -64,7 +64,7 @@ module.exports = {
     new BrowserSyncPlugin({
       host: "localhost",
       port: 8000,
-      proxy: "http://localhost:8888/webpack-php-setup/dev/",
+      proxy: "http://localhost:8888/1_kunden/limanus/Limanus_site/dev/",
     }),
   ],
 };

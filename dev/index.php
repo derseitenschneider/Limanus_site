@@ -11,7 +11,7 @@
     <?php
 require(dirname(__FILE__) . '/includes/header.php')
     ?>
-    <h1>hallo duse</h1>
+    <h1>hallo dusididie</h1>
 
     <h2><a href="about.php">About</a></h2>
 
