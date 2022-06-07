@@ -38,13 +38,22 @@
       transition: all 0.2s ease-in;
     }
 
-    &__link:hover {
-      // color: $clr-primary;
+    &__link:hover:not(.active) {
+      color: $clr-primary;
 
       &::after {
         transform: translateY(0);
         opacity: 1;
       }
+    }
+
+    &__link.active {
+      color: $clr-primary;
+    }
+
+    &__link.active::after {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }

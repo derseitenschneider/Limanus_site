@@ -10,7 +10,7 @@
     <?php
 require(dirname(__FILE__) . '/includes/header.php')
     ?>
-    <h1>hallo dusididie</h1>
+    <h1>hallo sie</h1>
 
     <h2><a href="about.php">About</a></h2>
   </body>

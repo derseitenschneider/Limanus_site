@@ -2,7 +2,7 @@
   <nav class="navigation">
     <ul class="navigation__list navigation__list--left">
       <li class="navigation__element">
-        <a href="index.php" class="navigation__link" type="button">Home</a>
+        <a href="index.php" class="navigation__link">Home</a>
       </li>
       <li class="navigation__element">
         <a href="about.php" class="navigation__link">Über mich</a>

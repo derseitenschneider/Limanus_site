@@ -1,4 +1,4 @@
 import "../sass/pages/index.scss";
-import { addActiveLink } from "./components/header.js";
+import { addClassToCurrentLink } from "./header.js";
 
-addActiveLink();
+addClassToCurrentLink();
