@@ -1,4 +1,4 @@
-import { getPageName } from "./functions/getPageName";
+import { getPageName } from "../functions/getPageName";
 const pageName = getPageName();
 const linkArray = document.querySelectorAll(".navigation__link");
 

@@ -2,6 +2,10 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
+const settings = require("./project.settings");
+
+console.log(settings);
+
 module.exports = {
   mode: "development",
   entry: {

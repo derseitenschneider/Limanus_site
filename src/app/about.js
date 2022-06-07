@@ -1,5 +1,5 @@
 import "../sass/pages/about.scss";
 
-import { addClassToCurrentLink } from "./header.js";
+import { addClassToCurrentLink } from "./templates/header.js";
 
 addClassToCurrentLink();
