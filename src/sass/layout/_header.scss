@@ -1,23 +1,126 @@
 .header {
-  border-top: 1rem solid $clr-secondary;
-  .navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  // border-top: 1rem solid $clr-secondary;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: $clr-secondary;
+    z-index: 10000;
+  }
 
+  .navigation {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+
+    align-items: center;
     font-size: 2.4rem;
     font-family: $font-body;
-    margin: 2.4rem 0;
+    padding: 2.4rem;
+    justify-items: center;
+
+    @include smallDesktop {
+      grid-template-columns: 1fr;
+      gap: 2.4rem;
+      padding: 0;
+    }
 
     &__list {
       display: flex;
-      max-width: 44rem;
-      flex-grow: 3;
-      justify-content: space-around;
+      gap: 3.2rem;
+      text-align: center;
+
+      @include smallDesktop {
+        gap: 2.4rem;
+        position: absolute;
+        top: 25rem;
+        background-color: azure;
+        width: 100%;
+        transform: translateY(-200%);
+        z-index: 100;
+      }
+
+      &--left {
+        justify-self: right;
+        padding-right: 3.2rem;
+        @include smallDesktop {
+          grid-row: 2/3;
+          justify-self: auto;
+          flex-direction: column;
+
+          padding-right: 0;
+        }
+      }
+      &--right {
+        justify-self: left;
+        padding-left: 3.2rem;
+        @include smallDesktop {
+          grid-row: 3/4;
+          position: absolute;
+          top: 40.5rem;
+          justify-self: auto;
+          flex-direction: column;
+          padding-left: 0;
+          padding: 2.2rem 0;
+        }
+      }
     }
 
-    &__logo-link {
-      margin: 0 2.4rem;
+    &__element {
+      flex-shrink: 0;
+    }
+
+    &__logo-box {
+      position: relative;
+      background-color: $clr-white;
+      width: 100%;
+      display: flex;
+      gap: 1.2rem;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1000;
+      padding-top: 2.4rem;
+    }
+
+    &__toggle {
+      width: 4.8rem;
+      height: 4.8rem;
+      border: 0;
+      background-color: $clr-white;
+      position: relative;
+    }
+
+    &__toggle-lines {
+      height: 2px;
+      width: 4rem;
+      background-color: $clr-text-dark;
+      position: absolute;
+      top: 50%;
+      left: 0.4rem;
+
+      &::before,
+      &::after {
+        content: "";
+        height: 2px;
+        width: 4rem;
+        background-color: inherit;
+        position: absolute;
+        left: 0;
+      }
+
+      &::before {
+        top: -1rem;
+      }
+      &::after {
+        top: 1rem;
+      }
+    }
+
+    &__logo {
+      height: 16rem;
     }
 
     &__link {
@@ -57,3 +160,5 @@
     }
   }
 }
+
+// 1000px

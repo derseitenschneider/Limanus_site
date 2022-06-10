@@ -1,0 +1,6 @@
+// 1000px
+@mixin smallDesktop {
+  @media (max-width: 62.5em) {
+    @content;
+  }
+}
