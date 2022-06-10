@@ -37,9 +37,11 @@
         gap: 2.4rem;
         position: absolute;
         top: 25rem;
-        background-color: azure;
+        background-color: $clr-white;
         width: 100%;
         transform: translateY(-200%);
+        transition: all 0.65s ease-out;
+
         z-index: 100;
       }
 
@@ -91,6 +93,10 @@
       border: 0;
       background-color: $clr-white;
       position: relative;
+      display: none;
+      @include smallDesktop {
+        display: block;
+      }
     }
 
     &__toggle-lines {
@@ -161,4 +167,7 @@
   }
 }
 
+.nav-open .navigation__list {
+  transform: translateY(0);
+}
 // 1000px

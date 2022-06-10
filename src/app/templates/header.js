@@ -11,3 +11,12 @@ export const addClassToCurrentLink = function () {
       link.classList.add("active");
   });
 };
+
+export const toggleNav = function () {
+  const navigationEl = document.querySelector(".navigation");
+  const navToggleBtn = document.querySelector(".navigation__toggle");
+
+  navToggleBtn.addEventListener("click", () => {
+    navigationEl.classList.toggle("nav-open");
+  });
+};
