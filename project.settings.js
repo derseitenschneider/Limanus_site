@@ -4,4 +4,5 @@ module.exports = {
   projectAuthor: "Brian Boy - derseitenschneider.ch",
 
   pages: ["index", "about", "prices", "news", "faq", "contact", "impressum"],
+  pageType: "php",
 };

@@ -8,7 +8,7 @@
         <a href="about.php" class="navigation__link">Über mich</a>
       </li>
       <li class="navigation__element">
-        <a href="" class="navigation__link">Angebot & Preise</a>
+        <a href="prices.php" class="navigation__link">Angebot & Preise</a>
       </li>
     </ul>
     <div class="navigation__logo-box">
@@ -361,13 +361,13 @@
 
     <ul class="navigation__list navigation__list--right">
       <li class="navigation__element">
-        <a href="" class="navigation__link">News</a>
+        <a href="news.php" class="navigation__link">News</a>
       </li>
       <li class="navigation__element">
-        <a href="" class="navigation__link">Häufige Fragen</a>
+        <a href="faq.php" class="navigation__link">Häufige Fragen</a>
       </li>
       <li class="navigation__element">
-        <a href="" class="navigation__link">Kontakt</a>
+        <a href="contact.php" class="navigation__link">Kontakt</a>
       </li>
     </ul>
   </nav>
