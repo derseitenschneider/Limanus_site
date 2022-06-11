@@ -1,6 +1,12 @@
 import "../sass/pages/index.scss";
-import { addClassToCurrentLink } from "./templates/header.js";
-import { toggleNav } from "./templates/header.js";
+import { runHeader } from "./templates/header";
+runHeader();
 
-addClassToCurrentLink();
-toggleNav();
+const removePreloadClass = function () {
+  document.querySelector("body").classList.remove("preload");
+};
+
+// window.addEventListener("load", function () {
+//   this.setTimeout(removePreloadClass, 150);
+// });
+window.addEventListener("load", removePreloadClass);

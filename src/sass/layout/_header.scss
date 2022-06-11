@@ -71,6 +71,10 @@
       }
     }
 
+    &.nav-open .navigation__list {
+      transform: translateY(0);
+    }
+
     &__element {
       flex-shrink: 0;
     }
@@ -115,6 +119,8 @@
         background-color: inherit;
         position: absolute;
         left: 0;
+
+        transition: 0.65s ease;
       }
 
       &::before {
@@ -124,7 +130,22 @@
         top: 1rem;
       }
     }
+    &.nav-open .navigation__toggle-lines {
+      height: 0;
 
+      &::before,
+      &::after {
+        top: 0;
+      }
+
+      &::before {
+        transform: rotate(225deg);
+      }
+
+      &::after {
+        transform: rotate(-225deg);
+      }
+    }
     &__logo {
       height: 16rem;
     }
@@ -166,8 +187,3 @@
     }
   }
 }
-
-.nav-open .navigation__list {
-  transform: translateY(0);
-}
-// 1000px

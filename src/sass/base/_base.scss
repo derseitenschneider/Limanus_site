@@ -78,3 +78,14 @@ p {
   max-height: 100%;
   line-height: 2;
 }
+
+.preload .navigation__list {
+  // opacity: 0;
+  // visibility: none !important;
+  // pointer-events: hidden !important;
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
