@@ -154,6 +154,10 @@
       position: relative;
     }
 
+    &__link:target {
+      border: 3px red solid;
+    }
+
     &__link::after {
       content: "";
       position: absolute;

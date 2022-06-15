@@ -8,9 +8,13 @@
   </head>
   <body>
     <?php
-include './includes/header.php'
+require(dirname(__FILE__) . '/includes/header.php')
     ?>
 
     <h1>FAQ Page</h1>
+
+    <?php
+require(dirname(__FILE__) . '/includes/footer.php')
+    ?>
   </body>
 </html>

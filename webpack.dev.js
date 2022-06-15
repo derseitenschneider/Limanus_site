@@ -62,6 +62,12 @@ module.exports = {
       filename: "includes/header.php",
       chunks: [],
     }),
+    new HtmlWebpackPlugin({
+      title: "Footer",
+      template: "src/includes/footer.php",
+      filename: "includes/footer.php",
+      chunks: [],
+    }),
     new BrowserSyncPlugin({
       host: "localhost",
       port: 8000,
